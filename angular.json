@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/amor-ilove-you",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -43,7 +43,6 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/loveu.github.io/",
               "budgets": [
                 {
                   "type": "initial",
@@ -101,9 +100,6 @@
             ],
             "scripts": []
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
