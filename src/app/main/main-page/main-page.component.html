@@ -1,0 +1,41 @@
+<div class="container-fluid text-center">
+  <div class="carousel-container">
+    <button (click)="voltar()">&#10094;</button>
+    <img [src]="imagens[imagemAtual]" class="carousel-image">
+    <button (click)="avancar()">&#10095;</button>
+  </div>
+  <div class="message">
+    <p>Oi, meu amor! Quero que saiba que essa meia década juntos foi a melhor que eu poderia ter na vida,
+      e eu não mudaria nenhum detalhe dessa jornada e nem de você, pois você é meu encaixe perfeito,
+      meu porto seguro, o grande amor da minha vida. Obrigada por existir e me escolher para toda a
+      eternidade, serei para sempre sua. <span style="color: lightblue;">Te amo desde as estrelas do céu até o fundo
+      do mar.</span> Com amor, Thay ❤️</p>
+  </div>
+  <h1>Contador de tempo juntos</h1>
+  <div class="contador">
+    <div class="linha-superior" style="padding-bottom: 1em;">
+      <div class="caixa">
+        <span>{{ anos }}</span>
+        <small>Anos</small>
+      </div>
+      <div class="caixa">
+        <span>{{ diasDesdeDataEspecial }}</span>
+        <small>Dias</small>
+      </div>
+    </div>
+    <div class="linha-inferior">
+      <div class="caixa">
+        <span>{{ horas }}</span>
+        <small>Horas</small>
+      </div>
+      <div class="caixa">
+        <span>{{ minutos }}</span>
+        <small>Minutos</small>
+      </div>
+      <div class="caixa">
+        <span>{{ segundos }}</span>
+        <small>Segundos</small>
+      </div>
+    </div>
+  </div>
+</div>
